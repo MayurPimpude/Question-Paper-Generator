@@ -1,0 +1,14 @@
+pip install --quiet flashtext==2.7
+pip install git+https://github.com/boudinfl/pke.git
+pip install --quiet transformers==4.8.1
+pip install --quiet sentencepiece==0.1.95
+pip install --quiet textwrap3==0.9.2
+pip install --quiet gradio==3.0.20
+pip install --quiet strsim==0.0.3
+pip install --quiet sense2vec==2.0.0
+pip install --quiet ipython-autotime
+pip install scipy>=1.8
+pip install --quiet sentence-transformers==2.2.2
+pip install spacy
+pip install sense2vec
+python -m spacy download en_core_web_sm
