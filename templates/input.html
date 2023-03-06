@@ -16,17 +16,28 @@
 <body class="dark:bg-gray-600">
 
  <div class="dark:bg-gray-600">
-    <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"><span class="text-blue-600 dark:text-blue-500">QuestGen</span></h1>
+    <h1 class="mb-4 text-center text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"><span class="text-blue-600 dark:text-amber-400">QuestGen</span></h1>
  </div>   
 
-<div class="py-2">
-    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="multiple_files">Upload multiple files</label>
-    <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="multiple_files" type="file" multiple>    
+<form action="" method="POST">
+    <div class="py-2 p-4">
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="multiple_files">Upload multiple files</label>
+        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="multiple_files" type="file" multiple>    
+    </div>
+    <button type="submit" class=" flex m-4 w-1/3 mx-auto px-5 rounded-lg py-3 text-center justify-center mx-auto font-medium text-white bg-zinc-900 hover:bg-zinc-800">
+        Generate
+    </button>
+</form>
+
+
+<div class="inline-flex items-center justify-center w-full">
+    <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-900">
+    <span class="absolute px-3 font-medium text-gray-900 text-2xl -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-600">OR</span>
 </div>
 
     
-<form>
-    <div class="w-full mb-4 border border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+<form class="p-4" action="/input1" method="GET">
+    <div class="w-full mb-4 border rounded-lg border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
         <div class="flex items-center justify-between px-3 py-2 border-b dark:border-gray-600">
             <div class="flex flex-wrap items-center divide-gray-200 sm:divide-x dark:divide-gray-600">
                 <div class="flex items-center space-x-1 sm:pr-4">
@@ -81,15 +92,15 @@
         </div>
         <div class="px-4 py-2 bg-white dark:bg-gray-800">
             <label for="editor" class="sr-only">Publish post</label>
-            <textarea id="editor" rows="8" class="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write an article..." required></textarea>
+            <textarea id="editor" name="tex" rows="8" class="block rounded-lg w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write an article..."></textarea>
         </div>
     </div>
 
-    <button type="submit" class=" flex w-1/3 mx-auto px-5 py-3 text-center justify-center mx-auto font-medium text-white bg-blue-700 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+    <button type="submit" class=" flex w-1/3 mx-auto px-5 rounded-lg py-3 text-center justify-center mx-auto font-medium text-white bg-zinc-900 hover:bg-zinc-800">
         Generate
     </button>
  </form>
- 
+
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> 

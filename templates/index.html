@@ -15,14 +15,13 @@
 </head>
 <body>
 
-  <div
-  class="relative overflow-hidden bg-cover bg-no-repeat h-screen"
+<div class="relative overflow-hidden bg-cover bg-no-repeat h-screen"
   style="
     background-position: 100%;
     background-image: url('../static/exam.jpg');
     /* height: 600px; */
   ">
-
+<header>
 <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
     <a href="https://flowbite.com/" class="flex items-center">
@@ -36,29 +35,41 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="flex flex-col p-4 mt-4 text-white rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li>
-          <a href="#" class="block text-lg py-2 pl-3 pr-4 bg-transparent text-white rounded md:bg-transparent hover:underline md:text-white md:p-0" aria-current="page">Home</a>
+          <a href="#" class="block text-lg py-2 pl-3 pr-4 bg-transparent text-white rounded md:bg-transparent hover:text-2xl md:text-white md:p-0" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white">About</a>
+          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:text-2xl md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-white">About</a>
         </li>
         <li>
-          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white">Services</a>
+          <a href="/input" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:text-gray-300 md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-gray-300">Generate</a>
         </li>
         <li>
-          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white">Pricing</a>
+          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:text-2xl md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-white">Login</a>
         </li>
         <li>
-          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white">Contact</a>
+          <a href="#" class="block text-lg py-2 pl-3 pr-4 text-white rounded hover:text-2xl md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-white">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="text-center justify-center mt-5">
-    <h1 class="fitem text-6xl font-semibold text-white p-5 mt-5">QuestGen</h1>
-    <h1 class="text-4xl text-center text-white p-5">Generate Questions from content.</h1>
-</div>   
+<div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
+      <div class="flex h-full items-center justify-center">
+        <div class="px-6 text-center text-white md:px-12">
+          <h1 class="mb-6 text-5xl font-bold">QuestGen</h1>
+          <h3 class="mb-8 text-3xl font-bold">Generate Questions from content.</h3>
+          <button
+            type="button"
+            class="inline-block rounded border-2 border-neutral-50 px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <a href="/input">Get started</a> 
+          </button>
+        </div>
+      </div>
+    </div>
+</header>
 
 </div>
 
@@ -437,6 +448,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> 
 
