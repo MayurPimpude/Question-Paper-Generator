@@ -14,7 +14,7 @@ async def home(request: Request):
 
 @app.get("/input", response_class=HTMLResponse)
 async def input(request: Request):
-    return templates.TemplateResponse('input.html',{"request": request})
+    return templates.TemplateResponse('input2.html',{"request": request})
 
 @app.post("/input")
 async def input1(tex: str = Form(...)):
